@@ -1,0 +1,52 @@
+@import 'reset';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(pictures/HeaderBhagaskara.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 59%;
+  width: 100%;
+
+}
+
+.intromenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 20rem;
+
+
+
+}
+
+.introbutton {
+  background-image: url(pictures/butonniewidzialny.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5%;
+  width: 8%;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid black;
+
+  img {
+    width: 35%;
+    margin-top: 30px;
+
+
+  }
+  p{
+    display: block;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+}
