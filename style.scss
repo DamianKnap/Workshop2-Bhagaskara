@@ -1,28 +1,92 @@
 @import 'reset';
 
+@font-face {
+  font-family: existance;
+  src: url(font/Existence-Light.otf);
+  src: url(font/Existence-StencilLight.otf);
+  src: url(font/Existence-UnicaseLight.otf);
+}
 body {
   margin: 0;
   padding: 0;
+  font-family: existance;
 }
 
 header {
   background-image: url(pictures/HeaderBhagaskara.png);
   background-size: contain;
   background-repeat: no-repeat;
-  padding-bottom: 59%;
+  padding-bottom: 50%;
   width: 100%;
+
 
 }
 
+.title {
+  text-align: center;
+  h1 {
+    padding-top: 4%;
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+
+  }:first-letter{
+     font-size:1.2em;
+   }
+  span{
+    color:#983F94;
+  }
+}
+.introduction{
+  width: 70%;
+  padding-bottom: 2%;
+  padding-left: 15%;
+  color: white;
+  :first-child{
+    font-size: 2em;
+  }
+  p{
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+}
 .intromenu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  height: 20rem;
-
-
+  padding: 5%;
+  height: 24rem;
+  .order1{
+    order: 0;
+    align-self: flex-end;
+    ;
+  }
+  .order2{
+    order: 1;
+    align-self: flex-end;
+  ;
+  }
+  .order3{
+    order: 2;
+    align-self: flex-start;
+  ;
+  }
+  .order4{
+    order: 3;
+    align-self: flex-start;
+  ;
+  }
+  .order5{
+    order: 4;
+    align-self: flex-end;
+  ;
+  }
+  .order6{
+    order: 5;
+    align-self: flex-end;
+  ;
+  }
 
 }
 
@@ -31,20 +95,21 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 5%;
-  width: 8%;
+  margin-right: 1em;
+  width: 9%;
   text-align: center;
   display: inline-block;
-  border: 2px solid black;
+
+
 
   img {
     width: 35%;
-    margin-top: 30px;
-
+    margin-top: 20%;
 
   }
-  p{
+  p {
     display: block;
-    color:white;
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 
