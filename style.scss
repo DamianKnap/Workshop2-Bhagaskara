@@ -6,6 +6,7 @@
   src: url(font/Existence-StencilLight.otf);
   src: url(font/Existence-UnicaseLight.otf);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -14,11 +15,9 @@ body {
 
 header {
   background-image: url(pictures/HeaderBhagaskara.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 50%;
   width: 100%;
-
 
 }
 
@@ -30,62 +29,65 @@ header {
     font-size: 5em;
     font-weight: bold;
 
-  }:first-letter{
-     font-size:1.2em;
-   }
-  span{
-    color:#983F94;
   }
+  :first-letter {
+    font-size: 1.2em;
+  }
+
 }
-.introduction{
+
+span {
+  color: #983F94;
+}
+
+.introduction {
   width: 70%;
-  padding-bottom: 2%;
   padding-left: 15%;
+  padding-bottom: 7%;
   color: white;
-  :first-child{
+  :first-child {
     font-size: 2em;
   }
-  p{
+  p {
     margin-top: 1em;
     font-size: 1.5em;
   }
 }
+
 .intromenu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  height: 24rem;
-  .order1{
+  height: 30rem;
+  .order1 {
     order: 0;
-    align-self: flex-end;
-    ;
+    align-self: center;
   }
-  .order2{
+  .order2 {
     order: 1;
-    align-self: flex-end;
-  ;
+    align-self: center;
   }
-  .order3{
+  .order3 {
     order: 2;
     align-self: flex-start;
-  ;
   }
-  .order4{
+  .order4 {
     order: 3;
-    align-self: flex-start;
-  ;
+    align-self: flex-end;
   }
-  .order5{
+  .order5 {
     order: 4;
-    align-self: flex-end;
-  ;
+    align-self: flex-start;
   }
-  .order6{
+  .order6 {
     order: 5;
-    align-self: flex-end;
-  ;
+    align-self: center;
+  }
+  .order7 {
+    order: 6;
+    align-self: center;
   }
 
 }
@@ -98,20 +100,269 @@ header {
   margin-right: 1em;
   width: 9%;
   text-align: center;
-  display: inline-block;
-
-
-
-  img {
-    width: 35%;
+  .icon {
+    width: 38%;
     margin-top: 20%;
 
   }
   p {
+    font-size: 1.2em;
     display: block;
     color: white;
-    margin-top: 10px;
+    margin-top: 10%;
     margin-bottom: 10px;
 
+  }
+}
+
+.introbutton:nth-child(3) {
+  margin-right: -1em;
+}
+
+.introbutton:nth-child(3):hover {
+  margin-right: -1em;
+}
+
+.introbutton:nth-child(5) {
+  margin-left: -1em;
+}
+
+.introbutton:nth-child(5):hover {
+  margin-left: -1em;
+}
+
+.introbutton:hover {
+  background-image: url(pictures/buton-fiolet.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5%;
+  margin-right: 1em;
+  width: 9%;
+  text-align: center;
+}
+
+.downArrow {
+  background-image: url(pictures/butonniewidzialny.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 10%;
+  width: 4%;
+  text-align: center;
+  .arrow {
+    width: 38%;
+    margin-top: 50%;
+  }
+}
+
+.downArrow:hover {
+  background-image: url(pictures/buton-fiolet.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 10%;
+  width: 4%;
+  text-align: center;
+}
+
+.margin {
+  margin-left: 19em;
+  margin-right: 19em;
+}
+
+nav {
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+}
+
+h3 {
+  display: inline-block;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+  float: right;
+  margin-right: 0.9rem;
+  font-size:1.5rem ;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+nav li:hover{
+  color:#983F94;
+}
+
+.howMake{
+  display: flex;
+}
+.contentbox{
+  text-align: center;
+  width: 25%;
+  
+  padding: 3rem;
+}
+.contentpicture{
+  background-image: url(pictures/szary-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  padding: 3rem;
+
+}
+
+.contentpicture img{
+  margin-right: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+  .title h1 {
+    color: red;
+    font-size: 3.8em;
+  }
+  .introduction {
+    width: 70%;
+    padding-bottom: 4%;
+    padding-left: 15%;
+    color: white;
+    :first-child {
+      font-size: 1.8em;
+    }
+    p {
+      margin-top: 1em;
+      font-size: 1.4em;
+    }
+  }
+  .intromenu {
+    height: 23.5rem;
+    padding: 5%;
+    .icon {
+      width: 29%;
+      margin-top: 20%;
+
+    }
+    p {
+      font-size: 1.3em;
+      display: block;
+      color: white;
+      margin-top: 6%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .title h1 {
+    color: green;
+    font-size: 3.5em;
+  }
+  .introduction {
+    width: 70%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    color: white;
+    :first-child {
+      font-size: 1.3em;
+    }
+    p {
+      margin-top: 1em;
+      font-size: 1em;
+    }
+  }
+  .intromenu {
+    height: 20rem;
+    padding: 3%;
+    .icon {
+      width: 29%;
+      margin-top: 20%;
+
+    }
+    p {
+      font-size: 1em;
+      display: block;
+      color: white;
+      margin-top: 6%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title h1 {
+    color: orange;
+    font-size: 2.8em;
+  }
+  .introduction {
+    width: 70%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    color: white;
+    :first-child {
+      font-size: 1em;
+    }
+    p {
+      margin-top: 1em;
+      font-size: 0.7em;
+    }
+  }
+  .intromenu {
+    height: 15rem;
+    padding: 3%;
+    .icon {
+      width: 29%;
+      margin-top: 20%;
+
+    }
+    p {
+      font-size: 0.9em;
+      display: block;
+      color: white;
+      margin-top: 4%;
+      margin-bottom: 10px;
+    }
+  }
+  .introbutton:nth-child(3) {
+    margin-right: -0.5em;
+  }
+
+  .introbutton:nth-child(3):hover {
+    margin-right: -0.5em;
+  }
+
+  .introbutton:nth-child(5) {
+    margin-left: -0.5em;
+  }
+
+  .introbutton:nth-child(5):hover {
+    margin-left: -0.5em;
+  }
+}
+
+.introduction {
+  width: 70%;
+  padding-bottom: 1%;
+
+}
+
+@media screen and (max-width: 700px) {
+  .title h1 {
+    color: blue;
+    font-size: 2em;
+  }
+  .intromenu {
+    display: none;
   }
 }
